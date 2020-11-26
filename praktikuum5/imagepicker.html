@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>IMAGE PICKER</title>
+        
+		<script>
+            function pilih(){
+                var pil=document.getElementById("form1").pic.value;
+               if (pil=="1")
+                {
+                    document.getElementById("img").innerHTML="<img src='IMG/aespa.jpg'>";
+                    window.alert("Ini Adalah Gambar Girl Group aespa.jpg");
+                }
+                else if (pil=="2")
+                {
+                    document.getElementById("img").innerHTML="<img src='IMG/fx.jpg'>";
+                    window.alert("Ini Adalah Gambar Girl Group FX.jpg");
+                }
+                else if (pil=="3")
+                {
+                    document.getElementById("img").innerHTML="<img src='IMG/nct127.jpg'>";
+                    window.alert("Ini Adalah Gambar Boy Group NCT 127.jpg");
+                }
+                else if (pil=="4")
+                {
+                    document.getElementById("img").innerHTML="<img src='IMG/nctdream.jpg'>";
+                    window.alert("Ini Adalah Gambar Boy Group NCT DREAM.jpg");
+                }
+                else if (pil=="5")
+                {
+                    document.getElementById("img").innerHTML="<img src='IMG/nctu.jpg'>";
+                    window.alert("Ini Adalah Gambar Boy Group NCT U.jpg");
+                }
+                else if (pil=="6")
+                {
+                    document.getElementById("img").innerHTML="<img src='IMG/redvelvet.jpg'>";
+                    window.alert("Ini Adalah Gambar Girl Group Red Velvet.jpg");
+                }
+                else if (pil=="7")
+                {
+                    document.getElementById("img").innerHTML="<img src='IMG/shinee.jpg'>";
+                    window.alert("Ini Adalah Gambar Boy Group SHINee.jpg");
+                }
+                else if (pil=="8")
+                {
+                    document.getElementById("img").innerHTML="<img src='IMG/snsd.jpg'>";
+                    window.alert("Ini Adalah Gambar Girl Group SNSD.jpg");
+                }else{
+                    document.getElementById("img").innerHTML="<img src='IMG/Pilih.jpg'>";
+                }
+            }
+        </script>
+    </head>
+    <style>
+        body{background-color: lightpink;
+        }
+        img{
+            border: 1px solid #ddd;
+             border-radius: 4px;
+             padding: 5px;
+             width: 500px;
+        }
+    </style>
+
+	<body>
+		<div>
+			<!-- Header Form -->
+			<div >
+  				<div>
+                    <h2 align="center">IMAGE PICKER</h2>
+                    <h1 align="center">SM Entertaintment Edition</h1>
+    				<div></div>
+  				</div>
+			</div>
+			<br>
+			<br>
+			<!-- Form Kurs -->
+					<center>
+						<form id="form1">
+							<select onChange="return pilih()" name="pic" id="pic" >
+								<option value="0">PILIH GAMBAR</option>
+								<option value="1"> AESPA </option>
+								<option value="2"> FX  </option>
+								<option value="3"> NCT 127  </option>
+								<option value="4"> NCT DREAM  </option>
+								<option value="5"> NCT U </option>
+								<option value="6"> RED VELVET  </option>
+								<option value="7"> SHINEE  </option>
+								<option value="8"> SNSD </option>
+							</select>
+						</form>
+					</center>
+					<br>
+					<center><div id="img"><img src="IMG/PILIH.jpg"></div></center>
+		</div>
+	</body>
+</html>
